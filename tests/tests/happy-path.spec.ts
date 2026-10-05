@@ -25,8 +25,8 @@ test("core happy path: register, create article, edit profile", async ({
   });
 
   await test.step("article appears on global feed", async () => {
-   // await article.assertVisibleOnFeed(`Test Article ${stamp}`);
-await article.assertVisibleOnFeed(`This Article Does Not Exist ${stamp}`);
+    await article.assertVisibleOnFeed(`Test Article ${stamp}`);
+    //await article.assertVisibleOnFeed(`This Article Does Not Exist ${stamp}`);
   });
 
   await test.step("update and persist bio", async () => {
