@@ -29,6 +29,8 @@ const ArticlePreview = props => {
     if (article.favorited) {
       props.unfavorite(article.slug);
     } else {
+    console.log(`First favorited by: ${article.favoritedBy[0].username}`); // bug: breaks when favoritesCount is 0
+
       props.favorite(article.slug);
     }
   };
