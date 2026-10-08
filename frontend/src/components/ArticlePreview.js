@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import agent from "../agent";
 import { connect } from "react-redux";
-import posthog from "posthog-js";
 import {
   ARTICLE_FAVORITED,
   ARTICLE_UNFAVORITED,
@@ -35,14 +34,13 @@ const ArticlePreview = (props) => {
     if (article.favorited) {
       props.unfavorite(article.slug);
     } else {
-
-      if (!posthog.isFeatureEnabled("favorite-article")) {
-        // Flag is off — feature disabled, bug can't fire
+      const ph = window.posthog;
+      if (!ph || !ph.isFeatureEnabled("favorite-article")) {
         return;
       }
 
       if (article.favoritesCount === 0) {
-        posthog.capture("favorite_attempt_failed", {
+        ph.capture("favorite_attempt_failed", {
           articleSlug: article.slug,
           favoritesCountBefore: article.favoritesCount,
         });
