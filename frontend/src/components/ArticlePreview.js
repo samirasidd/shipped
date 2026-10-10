@@ -46,7 +46,14 @@ const ArticlePreview = (props) => {
         });
       }
 
-      console.log(`First favorited by: ${article.favoritedBy[0].username}`); // bug: breaks when favoritesCount is 0
+      try {
+        console.log(`First favorited by: ${article.favoritedBy[0].username}`); // bug: breaks when favoritesCount is 0
+      } catch (err) {
+        if (ph.captureException) {
+          ph.captureException(err);
+        }
+        throw err;
+      }
 
       props.favorite(article.slug);
     }
