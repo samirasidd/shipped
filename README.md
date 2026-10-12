@@ -2,7 +2,7 @@
 
 Tests gate every PR. Monitoring catches what slips through.
 
-[Live app](https://shipped-sage.vercel.app) · [Run it](#run-it) · [Tests](#whats-tested) · [Notes](#notes-from-the-build)
+[Demo video]([https://drive.google.com/file/d/1v7qBgvf3JRfvGiZAzBFEA4JNhXdWhxlM/view?t=19.448](https://drive.google.com/file/d/1v7qBgvf3JRfvGiZAzBFEA4JNhXdWhxlM/view?t=19.448)) · [Live app](https://shipped-sage.vercel.app) · [Run it](#run-it) · [Tests](#whats-tested) · [Notes](#notes-from-the-build)
 
 ## How it works
 
@@ -17,6 +17,10 @@ Tests gate every PR. Monitoring catches what slips through.
 The bug in this demo was added on purpose, to show this flow.
 
 ## What it looks like
+
+![Blocked PR](docs/images/pr-blocked.jpg)
+
+*A failing check blocks the merge.*
 
 ![PostHog error tracking](docs/images/posthog-error-issue.jpg)
 
