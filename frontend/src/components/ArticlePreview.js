@@ -83,7 +83,7 @@ const ArticlePreview = (props) => {
       </div>
 
       <Link to={`/article/${article.slug}`} className="preview-link">
-        <h1>{article.title}</h1>
+        <h1>Untitled</h1>
         <p>{article.description}</p>
         <span>Read more...</span>
         <ul className="tag-list">
