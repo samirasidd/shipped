@@ -2,7 +2,7 @@
 
 Tests gate every PR. Monitoring catches what slips through.
 
-[Demo video]([https://drive.google.com/file/d/1v7qBgvf3JRfvGiZAzBFEA4JNhXdWhxlM/view?t=19.448](https://drive.google.com/file/d/1v7qBgvf3JRfvGiZAzBFEA4JNhXdWhxlM/view?t=19.448)) · [Live app](https://shipped-sage.vercel.app) · [Run it](#run-it) · [Tests](#whats-tested) · [Notes](#notes-from-the-build)
+[Demo video](https://drive.google.com/file/d/1v7qBgvf3JRfvGiZAzBFEA4JNhXdWhxlM/view?t=19.448) · [Live app](https://shipped-sage.vercel.app) · [Run it](#run-it) · [Tests](#whats-tested) · [Notes](#notes-from-the-build)
 
 ## How it works
 
