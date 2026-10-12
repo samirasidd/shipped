@@ -18,15 +18,15 @@ The bug in this demo was added on purpose, to show this flow.
 
 ## What it looks like
 
-![PostHog error tracking](docs/images/posthog-error-issue.png)
+![PostHog error tracking](docs/images/posthog-error-issue.jpg)
 
 *PostHog groups the error and counts who was affected.*
 
-![PostHog events](docs/images/posthog-events.png)
+![PostHog events](docs/images/posthog-events.jpg)
 
 *The failed favorite is also recorded as an event.*
 
-![Feature flag](docs/images/feature-flag.png)
+![Feature flag](docs/images/feature-flag.jpg)
 
 *One switch turns the feature off.*
 
